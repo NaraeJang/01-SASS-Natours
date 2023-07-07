@@ -10,9 +10,15 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     transform: translateY(-0.3rem);
     box-shadow: 0 10px 20px rgba($cc-black, 0.2);
 
